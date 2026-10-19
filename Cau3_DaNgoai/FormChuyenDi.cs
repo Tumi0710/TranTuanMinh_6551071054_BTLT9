@@ -93,21 +93,21 @@ namespace Cau3_DaNgoai
             lblStatus.Text = isVi ? "Sẵn sàng" : "Ready";
 
             if (dgvChuyenDi.Columns["MaChuyen"] != null)
-                dgvChuyenDi.Columns["MaChuyen"].HeaderText = isVi ? "Mã" : "ID";
+                dgvChuyenDi.Columns["MaChuyen"]!.HeaderText = isVi ? "Mã" : "ID";
             if (dgvChuyenDi.Columns["TenChuyen"] != null)
-                dgvChuyenDi.Columns["TenChuyen"].HeaderText = isVi ? "Tên chuyến" : "Trip Name";
+                dgvChuyenDi.Columns["TenChuyen"]!.HeaderText = isVi ? "Tên chuyến" : "Trip Name";
             if (dgvChuyenDi.Columns["DiaDiem"] != null)
-                dgvChuyenDi.Columns["DiaDiem"].HeaderText = isVi ? "Địa điểm" : "Destination";
+                dgvChuyenDi.Columns["DiaDiem"]!.HeaderText = isVi ? "Địa điểm" : "Destination";
             if (dgvChuyenDi.Columns["NgayDi"] != null)
-                dgvChuyenDi.Columns["NgayDi"].HeaderText = isVi ? "Ngày đi" : "Departure";
+                dgvChuyenDi.Columns["NgayDi"]!.HeaderText = isVi ? "Ngày đi" : "Departure";
             if (dgvChuyenDi.Columns["SoNguoi"] != null)
-                dgvChuyenDi.Columns["SoNguoi"].HeaderText = isVi ? "Số người" : "Members";
+                dgvChuyenDi.Columns["SoNguoi"]!.HeaderText = isVi ? "Số người" : "Members";
             if (dgvChuyenDi.Columns["NganSach"] != null)
-                dgvChuyenDi.Columns["NganSach"].HeaderText = isVi ? "Ngân sách" : "Budget";
+                dgvChuyenDi.Columns["NganSach"]!.HeaderText = isVi ? "Ngân sách" : "Budget";
             if (dgvChuyenDi.Columns["PhuongTien"] != null)
-                dgvChuyenDi.Columns["PhuongTien"].HeaderText = isVi ? "Phương tiện" : "Transport";
+                dgvChuyenDi.Columns["PhuongTien"]!.HeaderText = isVi ? "Phương tiện" : "Transport";
             if (dgvChuyenDi.Columns["DaHoanThanh"] != null)
-                dgvChuyenDi.Columns["DaHoanThanh"].HeaderText = isVi ? "Hoàn thành" : "Completed";
+                dgvChuyenDi.Columns["DaHoanThanh"]!.HeaderText = isVi ? "Hoàn thành" : "Completed";
         }
 
         private async Task LoadDataAsync(string? keyword = null, bool uncompletedOnly = false, DateTime? from = null, DateTime? to = null)
